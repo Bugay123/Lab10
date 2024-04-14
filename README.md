@@ -1,0 +1,1 @@
+﻿Розробка міні-проекту: REST-сервіс, який взаємодіє з БД за допомогою ASP.NET Core та Entity Framework Core
