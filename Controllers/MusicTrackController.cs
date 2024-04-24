@@ -1,17 +1,13 @@
 ﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Lab10.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Lab10.Controllers
 {
-    public class MusicTrackController : Controller
+    public class MusicTrackController(MusicDbContext context) : Controller
     {
-        private readonly MusicDbContext _context;
-
-        public MusicTrackController(MusicDbContext context)
-        {
-            _context = context;
-        }
+        private readonly MusicDbContext _context = context;
 
         public IActionResult Index()
         {
